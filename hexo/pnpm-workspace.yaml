@@ -1,0 +1,4 @@
+packages:
+  - .
+allowBuilds:
+  hexo-util: true

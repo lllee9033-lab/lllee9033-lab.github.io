@@ -1,0 +1,52 @@
+title: Lllee 的个人网站
+subtitle: The world is my oyster.
+description: 福州大学学生，正在修读软件工程，关注 FPGA 与深度学习。
+author: Lllee
+language: zh-CN
+timezone: Asia/Shanghai
+url: https://lllee9033-lab.github.io
+root: /
+permalink: posts/:title/
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+skip_render:
+  - .nojekyll
+new_post_name: :title.md
+default_layout: post
+external_link:
+  enable: true
+  field: site
+  exclude: []
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: false
+syntax_highlighter: highlight.js
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: '  '
+  wrap: true
+  hljs: true
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+default_category: 随笔
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: date
+per_page: 10
+pagination_dir: page
+theme: redefine
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
