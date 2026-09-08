@@ -1,0 +1,6 @@
+---
+permalink: tags/index.html
+title: 标签
+layout: tags
+comments: false
+---
