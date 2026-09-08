@@ -1,0 +1,58 @@
+name: Deploy Hexo Redefine
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'hexo/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: hexo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11.19.0'
+          run_install: false
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Generate website
+        run: pnpm run build
+      - name: Verify required pages
+        run: |
+          test -s public/index.html
+          test -s public/about/index.html
+          test -s public/posts/hello/index.html
+          test -s public/search.xml
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: hexo/public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
