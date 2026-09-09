@@ -1,0 +1,59 @@
+{
+	"meta": {
+		"title": "Lllee",
+		"description": "Lllee 的个人主页。记录学习、生活，以及从身上跨过的时间。",
+		"username": "Lllee"
+	},
+	"theme": {
+		"colorBrand": "#2fcbe7",
+		"colorPrimary": "#5B423F",
+		"colorSecondary": "#8b7667",
+		"colorBrandSecondary": "#eec25e",
+		"colorBg": "#d4e8f3",
+		"colorBorder": "#ffffff",
+		"colorCard": "#ffffff99",
+		"colorArticle": "#ffffffcc"
+	},
+	"backgroundColors": [
+		"#f7da3987",
+		"#8fdbe9",
+		"#fffef8"
+	],
+	"artImages": [],
+	"currentArtImageId": "",
+	"backgroundImages": [
+		{
+			"id": "",
+			"url": ""
+		}
+	],
+	"currentBackgroundImageId": "",
+	"socialButtons": [
+		{
+			"id": "github",
+			"type": "github",
+			"value": "https://github.com/lllee9033-lab",
+			"label": "Github",
+			"order": 2
+		},
+		{
+			"id": "email",
+			"type": "email",
+			"value": "2420231236@qq.com",
+			"label": "",
+			"order": 1
+		}
+	],
+	"clockShowSeconds": false,
+	"summaryInContent": false,
+	"isCachePem": false,
+	"hideEditButton": true,
+	"enableCategories": true,
+	"currentHatIndex": 3,
+	"hatFlipped": false,
+	"enableChristmas": false,
+	"beian": {
+		"text": "",
+		"link": ""
+	}
+}
