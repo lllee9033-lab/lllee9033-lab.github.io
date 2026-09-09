@@ -1,0 +1,16 @@
+{
+	"short_name": "Lllee",
+	"name": "Lllee 的个人主页",
+	"start_url": ".",
+
+	"form_factor": "wide",
+
+	"icons": [
+		{
+			"src": "/favicon.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"display": "standalone"
+}
