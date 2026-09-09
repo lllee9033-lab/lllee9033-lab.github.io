@@ -1,4 +1,4 @@
-# Lllee 的个人主页
+# Lllee's blog
 
 Shit it until you make it.
 
